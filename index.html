@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="./css/common.css">
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
 		<script src="./js/monopoly.js" type="text/javascript"></script>
-		
+
 	</head>
 	<body>
         <div class="board">
@@ -23,7 +23,7 @@
                 <div id="cell29" class="top game cell chance"><div class="content"></div><div class="title"></div></div>
                 <div id="cell30" class="top game cell available property" data-group="group6"><div class="content"></div><div class="title"></div></div>
                 <div id="cell31" class="top right corner game cell go-to-jail"><div class="content"></div></div>
-                
+
                 <div id="cell20" class="game cell left available property" data-group="group4"><div class="content"></div><div class="title"></div></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
@@ -74,20 +74,24 @@
                 <div class="cell"></div>
                 <div id="dice1" class="cell dice clickable shadowed">
                         <div class="dice-dot num2 num3 num4 num5 num6"></div>
-                        <div class="dice-dot right num5 num6"></div><br />
-                        <div class="dice-dot num4 num6"></div>
+                        <div class="dice-dot right num4 num5 num6"></div>
+												<br/>
+                        <div class="dice-dot num6"></div>
                         <div class="dice-dot num1 num5 num3"></div>
-                        <div class="dice-dot num6"></div><br />
+                        <div class="dice-dot num6"></div>
+												<br/>
                         <div class="dice-dot num4 num5 num6"></div>
                         <div class="dice-dot num2 num3 num4 num5 num6 right"></div>
                 </div>
                 <div class="cell"></div>
                 <div id="dice2" class="cell dice clickable shadowed">
-                        <div class="dice-dot num2 num3 num5 num6"></div>
-                        <div class="dice-dot right num4 num5 num6"></div><br />
-                        <div class="dice-dot num4 num6"></div>
+                        <div class="dice-dot num2 num3 num4 num5 num6"></div>
+                        <div class="dice-dot right num4 num5 num6"></div>
+												<br/>
+                        <div class="dice-dot num6"></div>
                         <div class="dice-dot num1 num5 num3"></div>
-                        <div class="dice-dot num6"></div><br />
+                        <div class="dice-dot num6"></div>
+												<br/>
                         <div class="dice-dot num4 num5 num6"></div>
                         <div class="dice-dot num2 num3 num4 num5 num6 right"></div>
                 </div>
@@ -151,13 +155,10 @@
                 <div id="cell3" class="bottom game cell available property" data-group="group1"><div class="title"></div><div class="content"></div></div>
                 <div id="cell2" class="bottom game cell available property" data-group="group1"><div class="title"></div><div class="content"></div></div>
                 <div id="cell1" class="bottom right corner game cell go"><div class="content"></div></div>
+        </div>
 
+        <section class="hidden templates" style="display:none;" ></section>
 
-        </section>
-        <section class="hidden templates" style="display:none;" >
-
-                
-        </section>
         <div class="popup-lightbox" style="display:none;">
                 <div class="middle-center shadowed popup">
                         <div id="intro" class="popup-page" style="display:none;">
@@ -172,7 +173,7 @@
                                 <button id="no" class="clickable" >NO</button><br>
                                 <div class="invalid-error" >You don't have enough money...</div></div>
                                 </div>
-                       
+
                         <div id="jail" class="popup-page" style="display:none;">
                                 <div class="popup-title">Go to Jail!</div>
                                 <div class="popup-content">You miss 3 turns<br />
@@ -200,6 +201,14 @@
                                         <button id="ok" class="clickable">OK</button>
                                 </div>
                         </div>
+
+												<div id="broke" class="popup-page" style="display:none;">
+																<div class="popup-title">You are broke. Have safe trip!</div>
+																<div class="popup-content">
+																				<div id="text-placeholder"></div>
+																				<button id="ok" class="clickable">OK</button>
+																</div>
+												</div>
                 </div>
         </div>
         </div>
