@@ -230,3 +230,10 @@ body{
 .removed{
     display:none;
 }
+
+
+.isHome{
+    background-image: url(../images/happy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
